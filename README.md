@@ -170,8 +170,8 @@ Simplemente para recordar, [aqui](https://pandorafms.com/docs/index.php?title=Pa
 #### Modulo JobLastResult
 Obtener el resultado de ejecución de la última vez que se ejecuto la tarea.<br>
 Según Microsoft:<br>
-- 0: OK
-- 1: MAL<br>
+- 0: MAL
+- 1: OK<br>
 
 *Resultado:* entero
 
