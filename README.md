@@ -201,7 +201,7 @@ module_end
 ```
 
 #### Modulo JobLastExec
-Obtener el tiempo de ejecución de la última vez que se ejecuto la tarea.<br>
+Obtener en un string la fecha y hora de la última ejecución de la tarea.<br>
 
 *Resultado:* string
 
