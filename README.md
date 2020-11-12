@@ -178,10 +178,10 @@ Según Microsoft:<br>
 Ejemplo de uso:
 ```
 module_begin
-module_name SQL Server Jobs - ESTADISTICAS-Subplán_1 - JobLastResult
+module_name SQL Server Jobs - ESTADISTICAS - JobLastResult
 module_type generic_data
-module_exec c:\pandorafms\scripts\JobLastResult.cmd Host1 ESTADISTICAS-Subplán_1
-module_description SQL Server Jobs - ESTADISTICAS-Subplán_1 - Resultado de la ultima ejecucion
+module_exec c:\pandorafms\scripts\JobLastResult.cmd Host1 ESTADISTICAS
+module_description SQL Server Jobs - ESTADISTICAS - Resultado de la ultima ejecucion
 module_end
 ```
 
@@ -193,10 +193,10 @@ Obtener el tiempo de ejecución de la última vez que se ejecuto la tarea.<br>
 Ejemplo de uso:
 ```
 module_begin
-module_name SQL Server Jobs - ESTADISTICAS-Subplán_1 - JobLastExecutionDuration
+module_name SQL Server Jobs - ESTADISTICAS - JobLastExecutionDuration
 module_type generic_data
-module_exec c:\pandorafms\scripts\JobLastExecutionDuration.cmd Host1 ESTADISTICAS-Subplán_1
-module_description SQL Server Jobs - ESTADISTICAS-Subplán_1 - Duracion de la ultima ejecucion en Segundos
+module_exec c:\pandorafms\scripts\JobLastExecutionDuration.cmd Host1 ESTADISTICAS
+module_description SQL Server Jobs - ESTADISTICAS - Duracion de la ultima ejecucion en Segundos
 module_end
 ```
 
@@ -208,10 +208,10 @@ Obtener en un string la fecha y hora de la última ejecución de la tarea.<br>
 Ejemplo de uso:
 ```
 module_begin
-module_name SQL Server Jobs - ESTADISTICAS-Subplán_1 - JobLastExec
+module_name SQL Server Jobs - ESTADISTICAS - JobLastExec
 module_type generic_data_string
-module_exec c:\pandorafms\scripts\JobLastExec.cmd Host1 ESTADISTICAS-Subplán_1
-module_description SQL Server Jobs - ESTADISTICAS-Subplán_1 - Fecha y hora de la última ejecución de la tarea
+module_exec c:\pandorafms\scripts\JobLastExec.cmd Host1 ESTADISTICAS
+module_description SQL Server Jobs - ESTADISTICAS - Fecha y hora de la última ejecución de la tarea
 module_end
 ```
 
