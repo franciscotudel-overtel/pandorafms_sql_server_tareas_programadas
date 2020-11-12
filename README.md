@@ -167,16 +167,51 @@ Simplemente para recordar, [aqui](https://pandorafms.com/docs/index.php?title=Pa
 - *Booleano asíncrono* (async_proc): Para valores booleanos de tipo asíncrono.
 - *Numérico asíncrono* (async_data): Para valores numéricos de tipo asíncrono.
 
+#### Modulo JobLastResult
+Obtener el resultado de ejecución de la última vez que se ejecuto la tarea.<br>
+Según Microsoft:<br>
+- 0: OK
+- 1: MAL<br>
+
+*Resultado:* entero
+
+Ejemplo de uso:
+```
+module_begin
+module_name SQL Server Jobs - ESTADISTICAS-Subplán_1 - JobLastResult
+module_type generic_data
+module_exec c:\pandorafms\scripts\JobLastResult.cmd Host1 ESTADISTICAS-Subplán_1
+module_description SQL Server Jobs - ESTADISTICAS-Subplán_1 - Resultado de la ultima ejecucion
+module_end
+```
+
 #### Modulo JobLastExecDuration
 Obtener el tiempo de ejecución de la última vez que se ejecuto la tarea.<br>
+
+*Resultado:* entero
 
 Ejemplo de uso:
 ```
 module_begin
 module_name SQL Server Jobs - ESTADISTICAS-Subplán_1 - JobLastExecutionDuration
 module_type generic_data
-module_exec c:\pandorafms\scripts\JobLastExecutionDuration.cmd Host1
+module_exec c:\pandorafms\scripts\JobLastExecutionDuration.cmd Host1 ESTADISTICAS-Subplán_1
 module_description SQL Server Jobs - ESTADISTICAS-Subplán_1 - Duracion de la ultima ejecucion en Segundos
+module_end
+```
+
+#### Modulo JobLastExec
+Obtener el tiempo de ejecución de la última vez que se ejecuto la tarea.<br>
+
+*Resultado:* string
+
+Ejemplo de uso:
+```
+module_begin
+module_name SQL Server Jobs - ESTADISTICAS-Subplán_1 - JobLastExec
+module_type generic_data_string
+module_exec c:\pandorafms\scripts\JobLastExec.cmd Host1 ESTADISTICAS-Subplán_1
+module_description SQL Server Jobs - ESTADISTICAS-Subplán_1 - Fecha y hora de la última ejecución de la tarea
 module_end
 ```
 
@@ -184,7 +219,6 @@ module_end
 ## Licencia
 
 Distribuido con the GNU General Public License v3.0. Ver `LICENSE` para mas informacion.
-
 
 
 <!-- CONTACTO -->

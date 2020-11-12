@@ -45,7 +45,7 @@ for /f "delims=" %%a in ('call %INIREAD% %INIFILE% /s %HOST% /i BBDD_PASS') do (
 @IF [%2]==[] (
   @echo -1
 ) ELSE (
-  @set COMANDO_SQL=sqlcmd -S %BBDD_HOST% -U %BBDD_USER% -P %BBDD_PASS% -d MSDB -v TAREA=^"%2 %3 %4 %5^" -i ^"%cpath%JobLastExecDuration.sql^" -W -s ^";^" -h-1
+  @set COMANDO_SQL=sqlcmd -S %BBDD_HOST% -U %BBDD_USER% -P %BBDD_PASS% -d MSDB -v TAREA=^"%2 %3 %4 %5^" -i ^"%cpath%JobLastExec.sql^" -W -s ^";^" -h-1
   @FOR /F "tokens=* USEBACKQ" %%F IN (`%%COMANDO_SQL%%`) DO (
 	@echo %%F 
   )
@@ -71,4 +71,7 @@ exit /b
 @echo y Plan de mantenimiento es el nombre del plan de mantenimiento.
 @echo Ojo! si el nombre tiene espacios, solo se admiten 3 bloques separados por 2 espacios
 @exit /b 0
+
+
+
 
